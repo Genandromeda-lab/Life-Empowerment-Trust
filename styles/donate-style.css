@@ -1,0 +1,158 @@
+/* ================================
+   Donate Page Styles (Refined)
+   ================================ */
+
+.donate-section {
+  margin: 40px auto;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.donate-section h1 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: var(--brand-accent);
+}
+
+/* Card Layout */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin: 40px auto;
+  padding: 30px 20px;
+  text-align: left;
+}
+
+.card h2 {
+  color: var(--brand-accent);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* QR Code Image */
+.card img {
+  max-width: 250px;
+  margin: 20px auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Donation Proof Form */
+#donation-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#donation-form label {
+  font-weight: bold;
+  color: var(--text-main);
+}
+
+#donation-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+#donation-form button {
+  margin-top: 15px;
+}
+
+/* Thank You Message */
+#thank-you-message {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  text-align: center;
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Donation Tiers */
+.donation-tiers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.tier {
+  background: #f9f9f9;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  width: 200px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  outline: none;
+}
+
+.tier h3 {
+  color: var(--brand-accent);
+  margin-bottom: 10px;
+}
+
+.tier:hover {
+  border-color: var(--brand-accent);
+  transform: scale(1.05);
+}
+
+.tier.selected {
+  border-color: var(--brand-accent);
+  background: #fffbe6;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transform: scale(1.05);
+}
+
+/* CTA Button */
+.cta-button {
+  display: block;
+  background-color: var(--brand-accent);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.2s;
+  text-align: center;
+}
+
+.cta-button:hover {
+  background-color: var(--brand-hover);
+  transform: scale(1.05);
+}
+
+/* Navigation Buttons */
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 40px auto;
+}
+
+.back-button, .next-button {
+  background-color: var(--brand-accent);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.back-button:hover, .next-button:hover {
+  background-color: var(--brand-hover);
+  transform: scale(1.05);
+}
+
+/* Center UPI and Bank Details */
+.card h2, .card p {
+  text-align: center;
+}

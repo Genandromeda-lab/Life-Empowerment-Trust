@@ -1,0 +1,96 @@
+/* ================================
+   Media & Publications Page Styles
+   ================================ */
+
+/* Media Section Wrapper */
+.media-section {
+  margin: 40px auto;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.media-section h1 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: var(--brand-accent);
+}
+
+/* Book Card */
+.card.book {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin: 40px auto;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.card.book img {
+  max-width: 300px;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.card.book h2 {
+  color: var(--brand-accent);
+  margin-bottom: 15px;
+}
+
+.card.book p {
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+/* Video Cards (Documentary + Interview) */
+.card.video,
+.card.interview {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin: 40px auto;
+  padding: 30px 20px;
+  text-align: left;
+}
+
+.card.video h2,
+.card.interview h2 {
+  color: var(--brand-accent);
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.card.video p,
+.card.interview p {
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 15px;
+}
+
+/* Video Container */
+.video-container {
+  margin-top: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Interview Card */
+.card.interview p {
+  margin-bottom: 15px;
+}
+
+/* CTA Buttons inside cards */
+.card .cta-button {
+  margin-top: 20px;
+  text-align: center;
+  display: block;
+}
+
+/* Navigation Buttons */
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 40px auto;
+}

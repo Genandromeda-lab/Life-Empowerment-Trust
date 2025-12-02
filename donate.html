@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donate | Life Empowerment Trust</title>
+  <link rel="stylesheet" href="styles/global.css" />
+  <link rel="stylesheet" href="styles/donate-style.css" />
+  <!-- Supabase client library -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="scripts/donate-script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <img src="images/logo_1.png" alt="Life Empowerment Trust Logo" class="logo" />
+      <h3>Life Empowerment Trust – "Transformation is imminent"</h3>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html#about-us">About Us</a></li>
+          <li><a href="programs.html#programs">Programs</a></li>
+          <li><a href="success.html#success-stories">Success Stories</a></li>
+          <li><a href="media.html#media">Media & Publications</a></li>
+          <li><a href="donate.html#donate" class="active">Donate</a></li>
+          <li><a href="contact.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="donate" class="donate-section">
+    <h1>Donate to Empower Lives</h1>
+
+    <div class="card">
+      <h2>Scan & Donate</h2>
+      <img src="images/QR_code.jpg" alt="QR Code for UPI Payment" aria-label="Scan this QR code to donate via UPI" />
+      <p><strong>UPI ID:</strong> lifeempowermenttrust@indianbk</p>
+      <p>Scan the QR code or use the UPI ID to make a direct donation.</p>
+    </div>
+
+    <div class="card">
+      <h2>Bank Transfer Details</h2>
+      <p><strong>Account Name:</strong> LIFE EMPOWERMENT TRUST</p>
+      <p><strong>Account Number:</strong> 7976720597</p>
+      <p><strong>IFSC Code:</strong> IDIB000A208</p>
+      <p><strong>Bank Name:</strong> Indian Bank</p>
+      <p><strong>Branch:</strong> Acharapakkam</p>
+    </div>
+
+    <div class="card">
+      <h2>Submit Your Donation Proof</h2>
+      <form id="donation-form" enctype="multipart/form-data">
+        <label for="donor-name">Full Name:</label>
+        <input type="text" id="donor-name" name="name" required />
+
+        <label for="donor-email">Email:</label>
+        <input type="email" id="donor-email" name="email" required />
+
+        <label for="donation-amount">Donation Amount:</label>
+        <input type="number" id="donation-amount" name="amount" step="100" required />
+
+        <label for="payment-proof">Upload Payment Screenshot:</label>
+        <input type="file" id="payment-proof" name="image" accept="image/*" />
+
+        <button type="submit" class="cta-button">Submit Donation Proof</button>
+      </form>
+      <p id="thank-you-message" style="display:none; color:green; font-weight:bold;">
+        ✅ Thank you for your generous contribution! Our team will contact you shortly.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Choose Your Impact</h2>
+      <div class="donation-tiers">
+        <div class="tier" data-amount="500" role="button" tabindex="0" aria-label="Donate ₹500">
+          <h3>₹500</h3>
+          <p>Support a child’s weekend tuition and meals for one month</p>
+        </div>
+        <div class="tier" data-amount="1500" role="button" tabindex="0" aria-label="Donate ₹1500">
+          <h3>₹1500</h3>
+          <p>Provide tailoring training and materials to one widow</p>
+        </div>
+        <div class="tier" data-amount="5000" role="button" tabindex="0" aria-label="Donate ₹5000">
+          <h3>₹5000</h3>
+          <p>Fund cultural revival and Parai Isai training for youth</p>
+        </div>
+        <div class="tier" data-amount="10000" role="button" tabindex="0" aria-label="Donate ₹10000 or more">
+          <h3>₹10000+</h3>
+          <p>Empower an entire village with education and relief</p>
+        </div>
+      </div>
+      <a href="contact.html#contact" class="cta-button">Confirm Your Contribution</a>
+    </div>
+
+    <section class="nav-buttons">
+      <a href="media.html" class="back-button">⬅ Back</a>
+      <a href="contact.html" class="next-button">Next ➡</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Life Empowerment Trust – "Transformation is imminent". Designed by Genandromeda</p>
+    <a href="https://maps.google.com/?q=Life+Empowerment+Trust+Location">📍 Location</a>
+  </footer>
+</body>
+</html>

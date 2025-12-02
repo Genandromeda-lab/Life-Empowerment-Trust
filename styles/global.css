@@ -1,0 +1,312 @@
+/* ================================
+   Global Styles for All Pages
+   ================================ */
+
+/* Color Variables */
+:root {
+  --brand-bg: #fde2e4;        /* soft background */
+  --brand-header: #f9c5d1;    /* header/footer background */
+  --brand-accent: #e75480;    /* main accent (buttons, highlights) */
+  --brand-hover: #ffd580;     /* hover state */
+  --text-main: #333333;       /* primary text */
+  --text-secondary: #444444;  /* secondary text */
+}
+
+/* Reset & Base */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--brand-bg);
+  color: var(--text-main);
+  scroll-behavior: smooth;
+}
+
+h1, h2 {
+  font-family: 'Georgia', serif;
+  text-align: center;
+  color: var(--text-main);
+}
+
+h3 {
+  font-family: 'Georgia', serif;
+  text-align: left;
+  color: var(--text-main);
+}
+
+p {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* ================================
+   Header & Navigation
+   ================================ */
+header {
+  background-color: var(--brand-header);
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 60px;
+  height: auto;
+  border-radius: 50%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-main);
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 20px;
+  transition: background 0.3s;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: var(--brand-hover);
+  color: var(--text-main);
+  outline: 2px solid var(--text-main);
+  outline-offset: 2px;
+}
+
+/* ================================
+   Cards & Sections
+   ================================ */
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+  padding: 40px 20px;
+}
+
+/* ================================
+   Buttons
+   ================================ */
+.cta-button,
+.quick-button,
+.back-button,
+.next-button {
+  background-color: var(--brand-accent);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+  display: inline-block;
+  margin: 10px auto;
+  cursor: pointer;
+  border: none;
+}
+
+.cta-button:hover,
+.quick-button:hover,
+.back-button:hover,
+.next-button:hover {
+  background-color: var(--brand-hover);
+  color: var(--text-main);
+  transform: scale(1.05);
+}
+
+.cta-button:focus,
+.quick-button:focus,
+.back-button:focus,
+.next-button:focus {
+  outline: 2px solid var(--text-main);
+  outline-offset: 2px;
+}
+
+/* ================================
+   Footer
+   ================================ */
+footer {
+  background-color: var(--brand-header);
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: var(--text-main);
+}
+
+footer p {
+  margin: 10px 0 5px 0;
+}
+
+footer a {
+  color: var(--text-main);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: var(--brand-accent);
+}
+
+/* Extended footer navigation (Contact page) */
+.footer-nav {
+  margin-bottom: 15px;
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 15px auto;
+  display: flex;
+  justify-content: space-between; /* evenly spread links */
+  flex-wrap: wrap;
+  max-width: 800px;
+}
+
+.footer-nav li {
+  flex: 1;
+  text-align: center;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: var(--brand-accent);
+  font-weight: bold;
+  transition: color 0.3s, background 0.3s;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.footer-nav a:hover,
+.footer-nav a:focus,
+.footer-nav a:active {
+  color: #fff;
+  background-color: var(--brand-accent);
+}
+
+/* ================================
+   Back + Next Navigation Buttons
+   ================================ */
+.nav-buttons,
+.home-next-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 40px auto;
+}
+
+/* ================================
+   Homepage Carousel
+   ================================ */
+.homepage-carousel img {
+  display: none;
+  width: 100%;
+  border-radius: 12px;
+  object-fit: contain; /* ensures full image shows */
+}
+
+.homepage-carousel img.active {
+  display: block;
+}
+
+
+/* Updates Section */
+.updates-container {
+  background: #ffffff;
+  padding: 40px 20px;
+  margin: 40px auto;
+  border-radius: 12px;
+  max-width: 1000px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.updates-container h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #ff006e;
+}
+
+/* Notification Box */
+.notification-box {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#notify-btn {
+  background: linear-gradient(45deg, #ff006e, #8338ec);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+}
+
+#notify-btn:hover {
+  transform: scale(1.05);
+}
+
+.notify-description {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* Carousel */
+.updates-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 20px;
+  padding: 10px;
+}
+
+.update-card {
+  flex: 0 0 80%;
+  background: #fdfdfd;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  scroll-snap-align: start;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  animation: slide 20s infinite linear;
+}
+
+.update-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.update-text h3 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.update-text p {
+  margin: 5px 0 0;
+  font-size: 1rem;
+}

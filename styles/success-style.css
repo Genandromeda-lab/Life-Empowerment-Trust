@@ -1,0 +1,125 @@
+/* ================================
+   Success Stories Page Specific Styles
+   ================================ */
+
+/* Success Section Wrapper */
+.success-section {
+  margin: 40px auto;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.success-section h1 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: var(--brand-accent);
+}
+
+/* Milestones Section (Impact in Numbers) */
+.milestones {
+  background: linear-gradient(135deg, var(--brand-hover), var(--brand-header));
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+.milestones h2 {
+  color: var(--brand-accent);
+  margin-bottom: 20px;
+}
+
+.milestones ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.milestones li {
+  margin: 12px 0;
+  padding: 12px;
+  background: #fff;
+  border-radius: 8px;
+  font-weight: bold;
+  color: var(--text-main);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Mentor Spotlight */
+.mentor {
+  text-align: center; /* Center everything inside */
+}
+
+.mentor img {
+  display: block;
+  margin: 0 auto 20px auto; /* Center image horizontally */
+  max-width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.mentor h2 {
+  color: var(--brand-accent);
+  margin-bottom: 15px;
+}
+
+.mentor p {
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 15px;
+}
+
+/* Call to Action Section */
+.action {
+  text-align: center;
+  background: #fff8f0;
+  border-left: 5px solid var(--brand-accent);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.action h2 {
+  margin-bottom: 15px;
+  color: var(--brand-accent);
+}
+
+.action p {
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: var(--text-main);
+}
+
+/* Quick Buttons Group */
+.quick-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.quick-button {
+  background-color: var(--brand-accent);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.quick-button:hover,
+.quick-button:focus {
+  background-color: var(--brand-hover);
+  color: var(--text-main);
+  outline: 2px solid var(--text-main);
+  outline-offset: 2px;
+}
+
+/* Navigation Buttons */
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 40px auto;
+}
