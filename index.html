@@ -160,11 +160,25 @@
           notifyBtn.classList.add("enabled");
           notifyBtn.disabled = true;
         } else {
-          alert("❌ Notifications blocked. Please allow them in your browser settings.");
+          
         }
       });
     });
   </script>
   <script src="menu.js"></script>
+  <script type="module">
+  import { ensureNotificationPermission } from './script/notifications.js';
+
+  const notifyBtn = document.getElementById('notify-btn');
+  if (notifyBtn) {
+    notifyBtn.addEventListener('click', async () => {
+      const result = await ensureNotificationPermission();
+      if (result.permission === 'granted') {
+        notifyBtn.classList.add('enabled');
+        notifyBtn.textContent = 'Notifications Enabled';
+      }
+    });
+  }
+</script>
 </body>
 </html>

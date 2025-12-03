@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
         notifyBtn.classList.add("enabled");
         notifyBtn.disabled = true; // prevent further clicks
       } else {
-        alert("❌ Notifications blocked. Please allow them in your browser settings.");
+        
       }
     });
   }
