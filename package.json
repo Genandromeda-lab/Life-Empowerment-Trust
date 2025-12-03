@@ -4,6 +4,11 @@
   "version": "1.0.0",
   "description": "Life Empowerment Trust – Static Website",
   "main": "index.html",
+  "private": true,
+  "dependencies": {
+    "resend": "^3.0.0"
+  }
+  ,
   "scripts": {
     "start": "echo 'Open index.html in your browser or deploy via GitHub Pages/Netlify'"
   },

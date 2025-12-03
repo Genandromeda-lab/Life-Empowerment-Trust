@@ -58,6 +58,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let imageUrl = null;
 
+
+
     try {
       // Step 1: Upload file to Supabase Storage (public bucket)
       if (file) {
