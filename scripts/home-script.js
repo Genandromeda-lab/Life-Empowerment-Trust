@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
   const notifyBtn = document.getElementById("notify-btn");
 
-  if (notifyBtn) {
+  if (notify-btn) {
     notifyBtn.addEventListener("click", async () => {
       // Ask browser for notification permission
       const permission = await Notification.requestPermission();

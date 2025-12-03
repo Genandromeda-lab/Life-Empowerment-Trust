@@ -1,19 +1,20 @@
 {
-  "name": "full-stack",
+  
+  "name": "life-empowerment-trust",
   "version": "1.0.0",
-  "description": "��#\u0000 \u0000L\u0000i\u0000f\u0000e\u0000-\u0000E\u0000m\u0000p\u0000o\u0000w\u0000e\u0000r\u0000m\u0000e\u0000n\u0000t\u0000-\u0000T\u0000r\u0000u\u0000s\u0000t\u0000\r\u0000 \u0000#\u0000 \u0000L\u0000i\u0000f\u0000e\u0000-\u0000E\u0000m\u0000p\u0000o\u0000w\u0000e\u0000r\u0000m\u0000e\u0000n\u0000t\u0000-\u0000T\u0000r\u0000u\u0000s\u0000t\u0000\r\u0000 \u0000",
-  "main": "index.js",
+  "description": "Life Empowerment Trust – Static Website",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "echo 'Open index.html in your browser or deploy via GitHub Pages/Netlify'"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Genandromeda-lab/Life-Empowerment-Trust.git"
+    "url": "https://github.com/Genandromeda-lab/Life-Empowerment-Trust.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["charity", "trust", "education", "empowerment"],
+  "author": "Genandromeda",
   "license": "ISC",
-  "type": "commonjs",
+ 
   "bugs": {
     "url": "https://github.com/Genandromeda-lab/Life-Empowerment-Trust/issues"
   },
