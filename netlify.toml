@@ -1,0 +1,7 @@
+[build]
+  publish = "/"
+  command = ""
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+  inputs = { skip = true }
