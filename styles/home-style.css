@@ -207,6 +207,8 @@
   line-height: 1.6;
   color: #333;
   text-align: justify;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 /* Quick Buttons */
@@ -219,9 +221,13 @@
 }
 
 .quick-button {
-  flex: 1 1 auto;
+ 
+  flex: 1 1 30%;       /* each button takes ~30% of row */
+  min-width: 150px;    /* ensures consistent minimum size */
+  max-width: 180px;    /* keeps them neat */
   text-align: center;
-  max-width: 180px;   /* smaller button width */
+
+
 }
 
 .quick-button a {
@@ -357,7 +363,7 @@
 
 /* Mobile Menu Toggle */
 .menu-toggle {
-  display: none;
+  display: block;
   background: none;
   border: none;
   font-size: 1.8rem;
@@ -401,32 +407,17 @@ header {
   color: var(--text-main);
 }
 
-/* Layout inside header */
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
 
-/* Logo and tagline */
-.logo-title {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
+
+
 
 .logo-title img.logo {
   height: 50px;
   width: auto;
+  
 }
 
-.logo-title h3 {
-  font-size: 1rem;
-  font-weight: bold;
-  color: var(--brand-accent);
-  margin: 0;
-}
+
 
 /* Navigation */
 .main-nav ul {
@@ -455,11 +446,6 @@ header {
     align-items: flex-start;
   }
 
-  .main-nav ul {
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
-  }
 
   .menu-toggle {
     align-self: flex-end;
@@ -474,4 +460,19 @@ header {
   background-color: pink; /* or use a custom shade like #f48fb1 */
   color: #fff;
   border-radius: 6px;
+}
+
+@media (min-width: 769px) {
+  .main-nav ul {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 15px;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 769px) {
+  header .menu-toggle {
+    display: none !important;
+  }
 }

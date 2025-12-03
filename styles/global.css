@@ -290,7 +290,8 @@ footer a:hover {
 }
 
 .update-card {
-  flex: 0 0 80%;
+  flex: 0 0 auto;
+  min-width: 80%;
   background: #fdfdfd;
   border-radius: 10px;
   box-shadow: 0 3px 8px rgba(0,0,0,0.1);
@@ -299,7 +300,7 @@ footer a:hover {
   align-items: center;
   gap: 15px;
   padding: 15px;
-  animation: slide 20s infinite linear;
+
 }
 
 .update-card img {
@@ -399,10 +400,18 @@ header {
   gap: 10px;
 }
 
+.logo {
+  width: 60px;
+  height: auto;
+  border-radius: 0;   /* remove rounding */
+  object-fit: contain; /* keep full logo visible */
+}
+
 .logo-title img.logo {
   height: 50px;
   width: auto;
 }
+
 
 .logo-title h3 {
   font-size: 1rem;
@@ -559,5 +568,83 @@ img {
 @media (min-width: 769px) {
   .menu-toggle {
     display: none; /* hides toggle on desktop */
+  }
+}
+
+
+
+
+/* Show toggle button on mobile */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .main-nav {
+    display: none; /* hide menu by default */
+    position: absolute;
+    top: 60px;     /* below header */
+    right: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 10px;
+  }
+
+  .main-nav.active {
+    display: block; /* show when toggled */
+  }
+
+  .main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-nav li {
+    margin: 10px 0;
+  }
+
+  .main-nav a {
+    text-decoration: none;
+    color: #1d3557;
+    font-weight: bold;
+  }
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+  display: block;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: #1d3557; /* dark blue */
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .main-nav ul {
+    flex-direction: column;
+    gap: 10px;
+    display: none;
+    margin-top: 15px;
+  }
+
+  .main-nav ul.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+@media (min-width: 769px) {
+  header .menu-toggle {
+    display: none !important;
   }
 }
