@@ -2,6 +2,13 @@
    Global Styles for All Pages
    ================================ */
 
+
+   html ,body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 /* Color Variables */
 :root {
   --brand-bg: #fde2e4;        /* soft background */
@@ -234,7 +241,7 @@ footer a:hover {
   padding: 40px 20px;
   margin: 40px auto;
   border-radius: 12px;
-  max-width: 1000px;
+  max-width: 900px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
@@ -309,4 +316,37 @@ footer a:hover {
 .update-text p {
   margin: 5px 0 0;
   font-size: 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/* Apply smaller sizes on mobile screens */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;        /* reduce text size */
+    line-height: 1.4;       /* tighter spacing */
+  }
+
+  .container, .updates-container, .carousel-container {
+    max-width: 95%;         /* keep content inside screen */
+    margin: 0 auto;         /* center it */
+    padding: 0.5rem;        /* reduce padding */
+  }
+
+  h1, h2, h3 {
+    font-size: 1.2em;       /* smaller headings */
+  }
+
+  p {
+    font-size: 0.9em;       /* smaller paragraph text */
+  }
+
+  img {
+    border-radius: 8px;     /* softer corners */
+  }
 }
