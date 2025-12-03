@@ -48,3 +48,60 @@ export async function ensureNotificationPermission() {
   }
   return { supported: true, permission };
 }
+
+
+// script/notifications.js
+
+function showToast(message) {
+  const toast = document.createElement('div');
+  toast.textContent = message;
+  toast.style.position = 'fixed';
+  toast.style.bottom = '20px';
+  toast.style.left = '50%';
+  toast.style.transform = 'translateX(-50%)';
+  toast.style.background = '#e75480'; // brand accent
+  toast.style.color = '#fff';
+  toast.style.padding = '10px 16px';
+  toast.style.borderRadius = '8px';
+  toast.style.boxShadow = '0 4px 12px rgba(0,0,0,0.2)';
+  toast.style.zIndex = '2000';
+  document.body.appendChild(toast);
+  setTimeout(() => toast.remove(), 3000);
+}
+
+async function ensureNotificationPermission() {
+  if (!('Notification' in window)) {
+    showToast('Notifications not supported in this browser.');
+    return;
+  }
+
+  if (Notification.permission === 'granted') {
+    showToast('Notifications already enabled.');
+    return;
+  }
+
+  if (Notification.permission === 'denied') {
+    showToast('Notifications are blocked in browser settings.');
+    return;
+  }
+
+  const permission = await Notification.requestPermission();
+  if (permission === 'granted') {
+    showToast('Notifications enabled. Thank you!');
+    const btn = document.getElementById('notify-btn');
+    if (btn) {
+      btn.classList.add('enabled');
+      btn.textContent = '🔔 Notifications Enabled';
+    }
+  } else {
+    showToast('You can enable notifications later in settings.');
+  }
+}
+
+// Attach to button after DOM loads
+document.addEventListener('DOMContentLoaded', () => {
+  const notifyBtn = document.getElementById('notify-btn');
+  if (notifyBtn) {
+    notifyBtn.addEventListener('click', ensureNotificationPermission);
+  }
+});
