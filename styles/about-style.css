@@ -7,6 +7,10 @@
   margin: 40px auto;
   max-width: 1000px;
 }
+ 
+.about-section p {
+  text-align: justify;
+}
 
 /* Quote Section */
 .quote {
@@ -88,3 +92,4 @@
   gap: 20px;
   margin-top: 30px;
 }
+

@@ -12,25 +12,33 @@
 <body>
   <!-- Header -->
   <header>
+  <div class="section-container">
     <div class="header-container">
-      <img src="images/logo_1.png" alt="Trust Logo" class="logo" />
-      <h3>Life Empowerment Trust – "Transformation is imminent"</h3>
-      <nav>
+      <div class="logo-title">
+        <img src="images/logo_1.png" alt="Trust Logo" class="logo" />
+        <h3>Life Empowerment Trust – "Transformation is imminent"</h3>
+      </div>
+
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+
+      <nav class="main-nav">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html#about-us">About Us</a></li>
-          <li><a href="programs.html#programs">Programs</a></li>
-          <li><a href="success.html#success-stories" class="active">Success Stories</a></li>
-          <li><a href="media.html#media">Media & Publications</a></li>
-          <li><a href="donate.html#donate">Donate</a></li>
-          <li><a href="contact.html#contact">Contact</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="success.html">Success Stories</a></li>
+          <li><a href="media.html">Media & Publications</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </div>
-  </header>
+  </div>
+</header>
 
   <!-- Success Stories Section -->
   <main id="success-stories" class="success-section">
+    <div class="section-container">
     <h1>Success Stories</h1>
 
     <!-- Milestones -->
@@ -50,10 +58,10 @@
       <h2>Mentor Spotlight: Very Rev Fr.Benjamin</h2>
       <img src="images/Benjamine_fr.jpg" alt="Benjamine, mentor and guide" />
       <p>
-        Very Rev.Fr.Benjamin has been a guiding light for our students and youth. His dedication to inclusive education and cultural healing has transformed many lives across villages. He mentors girls in tailoring, boys in Parai Isai, and supports elders with compassion and care.
-        is message: "Empowerment begins with listening. Every child, every widow, every elder has a story worth honoring."
+        Very Rev.Fr.Benjamin has been a guiding light for our students and youth. His dedication to inclusive education and cultural healing has transformed many lives across villages.
+         He mentors girls in tailoring, boys in Parai Isai, and supports elders with compassion and care.
       </p>
-      <p><strong>Her message:</strong> "Empowerment begins with listening. Every child, every widow, every elder has a story worth honoring."</p>
+      <p><strong>His message:</strong> "Empowerment begins with listening. Every child, every widow, every elder has a story worth honoring."</p>
     </div>
 
     <!-- Call to Action -->
@@ -75,13 +83,17 @@
       <a href="programs.html" class="back-button">⬅ Back</a>
       <a href="media.html" class="next-button">Next ➡</a>
     </section>
+    </div>
   </main>
 
   <!-- Footer -->
   <footer>
+    <div class="section-container">
     <p>© 2025 Life Empowerment Trust – "Transformation is imminent". Designed by Genandromeda</p>
     <a href="https://maps.app.goo.gl/U24AwrzcvgsvEUD76?g_st=aw">📍 Location</a>
+    </div>
   </footer>
   <script src="scripts/success-script.js" defer></script>
+  <script src="menu.js"></script>
 </body>
 </html>

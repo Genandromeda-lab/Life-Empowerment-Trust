@@ -13,25 +13,33 @@
 <body>
   <!-- Header -->
   <header>
+  <div class="section-container">
     <div class="header-container">
-      <img src="images/logo_1.png" alt="Trust Logo" class="logo" />
-      <h3>Life Empowerment Trust – "Transformation is imminent"</h3>
-      <nav>
+      <div class="logo-title">
+        <img src="images/logo_1.png" alt="Trust Logo" class="logo" />
+        <h3>Life Empowerment Trust – "Transformation is imminent"</h3>
+      </div>
+
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+
+      <nav class="main-nav">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html#about-us">About Us</a></li>
-          <li><a href="programs.html#programs" class="active">Programs</a></li>
-          <li><a href="success.html#success-stories">Success Stories</a></li>
-          <li><a href="media.html#media">Media & Publications</a></li>
-          <li><a href="donate.html#donate">Donate</a></li>
-          <li><a href="contact.html#contact">Contact</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="success.html">Success Stories</a></li>
+          <li><a href="media.html">Media & Publications</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </div>
-  </header>
+  </div>
+</header>
 
   <!-- Programs Section -->
   <main id="programs" class="programs-section">
+    <div class="section-container">
     <h1>Our Programs</h1>
 
     <!-- Program 1: Weekend Tuition -->
@@ -47,7 +55,7 @@
 
     <!-- Program 2: Widow Empowerment -->
     <div class="program-card">
-      <h2>Widow Empowerment</h2>
+      <h2>Widow's Empowerment</h2>
       <div class="carousel">
         <img src="images/widow_img_one.jpg" alt="Providing sewing machine" />
         <img src="images/widow_img_two.jpg" alt="Helping widows" />
@@ -58,7 +66,7 @@
 
     <!-- Program 3: Elder Care -->
     <div class="program-card">
-      <h2>Elder Care</h2>
+      <h2>Elderly Care</h2>
       <div class="carousel">
         <img src="images/juliyes_with_old_women_clear_img_2.jpg" alt="Juliyes with elders" class="active" />
         <img src="images/juliyes_teaching_elders.jpg" alt="Juliyes teaching elders" />
@@ -99,12 +107,16 @@
       <a href="about.html" class="back-button">⬅ Back</a>
       <a href="success.html" class="next-button">Next ➡</a>
     </section>
+    </div>
   </main>
 
   <!-- Footer -->
   <footer>
+    <div class="section-container">
     <p>© 2025 Life Empowerment Trust – "Transformation is imminent". Designed by Genandromeda</p>
     <a href="https://maps.app.goo.gl/U24AwrzcvgsvEUD76?g_st=aw">📍 Location</a>
+    </div>
   </footer>
+  <script src="menu.js"></script>
 </body>
 </html>

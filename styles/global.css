@@ -44,6 +44,7 @@ p {
   font-size: 1rem;
   color: var(--text-secondary);
   line-height: 1.6;
+  
 }
 
 /* ================================
@@ -348,5 +349,215 @@ img {
 
   img {
     border-radius: 8px;     /* softer corners */
+  }
+}
+
+
+/* Global container utility */
+.section-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* Predictable box-sizing for all elements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/* Sticky header */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--brand-header);
+  padding: 10px 0;
+  color: var(--text-main);
+}
+
+/* Header layout */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Logo and tagline */
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-title img.logo {
+  height: 50px;
+  width: auto;
+}
+
+.logo-title h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--brand-accent);
+  margin: 0;
+}
+
+/* Desktop nav: always visible, horizontal */
+.main-nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav li {
+  flex-shrink: 0;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: var(--text-main);
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.main-nav a:hover {
+  background-color: var(--brand-accent);
+  color: #fff;
+}
+
+/* Mobile: nav hidden until toggle */
+@media (max-width: 768px) {
+  .main-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background-color: var(--brand-header);
+    border-top: 2px solid var(--brand-accent);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .main-nav.open {
+    display: block;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    gap: 12px;
+    padding: 10px;
+  }
+
+  .main-nav a {
+    display: block;
+    padding: 10px;
+    font-size: 0.95rem;
+  }
+
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: var(--text-main);
+  }
+
+  .logo-title {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
+/* Desktop: hide toggle button */
+@media (min-width: 769px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+/* Consistent tap feedback for nav links */
+/* Tap feedback for nav links */
+.main-nav a:active,
+.main-nav a:focus {
+  outline: none;
+  background-color: pink; /* or use a custom shade like #f48fb1 */
+  color: #fff;
+  border-radius: 6px;
+}
+
+:root {
+  --tap-feedback: pink; /* or #f48fb1 */
+}
+
+.main-nav a:active,
+.main-nav a:focus {
+  background-color: var(--tap-feedback);
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 768px) {
+  .nav-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .tier {
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  .main-nav {
+    display: none; /* hides full nav */
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background-color: var(--brand-header);
+  }
+
+  .main-nav.open {
+    display: block; /* shows nav when toggle is active */
+  }
+
+  .menu-toggle {
+    display: block; /* shows toggle button on mobile */
+  }
+
+  .logo-title {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 769px) {
+  .menu-toggle {
+    display: none; /* hides toggle on desktop */
   }
 }
