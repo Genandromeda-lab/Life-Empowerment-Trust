@@ -11,6 +11,10 @@
   padding: 30px 20px;      /* slightly smaller padding */
 }
 
+
+
+
+
 .hero h1 {
   font-size: 2.2rem;       /* reduce heading size */
 }
@@ -30,20 +34,20 @@
 .hero {
   background: linear-gradient(to right, var(--brand-header), var(--brand-hover));
   text-align: center;
-  padding: 80px 20px;
+  padding: 40px 20px;
   border-radius: 12px;
   margin: 40px auto;
   max-width: 900px;
 }
 
 .hero h1 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   margin-bottom: 20px;
   color: var(--text-main);
 }
 
 .hero .cta-button {
-  font-size: 1.2rem;
+  font-size: 0.9rem;
 }
 
 /* Carousel */
@@ -165,13 +169,13 @@
 
 .intro h2 {
   margin-bottom: 20px;
-  font-size: 2rem;
+  font-size: 1rem;
   color: #ff006e;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
 .intro p {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   line-height: 1.6;
   color: #333;
   text-align: justify;
@@ -197,14 +201,14 @@
 
 .mission h2 {
   margin-bottom: 20px;
-  font-size: 2rem;
+  font-size: 1rem;
   color: #ff006e; /* highlight heading in brand accent */
   text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
   padding: 0 10px;
 }
 
 .mission p {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   line-height: 1.6;
   color: #333;
   text-align: justify;
@@ -217,15 +221,15 @@
   display: flex;
   justify-content: center;
   gap: 15px;          /* slightly smaller gap */
-  margin: 30px auto;  /* reduced spacing */
+  margin: -70px auto;  /* reduced spacing */
   flex-wrap: wrap;
 }
 
 .quick-button {
  
   flex: 1 1 30%;       /* each button takes ~30% of row */
-  min-width: 150px;    /* ensures consistent minimum size */
-  max-width: 180px;    /* keeps them neat */
+  min-width: 98px;    /* ensures consistent minimum size */
+  /* max-width: 180px;    keeps them neat */
   text-align: center;
 
 
@@ -252,19 +256,20 @@
 .home-next-container {
   display: flex;
   justify-content: center;
-  margin: 40px auto;
+  margin: 7px auto;
 }
 
 .home-next-container .next-button {
   background-color: var(--brand-accent);
   color: #fff;
-  padding: 12px 24px;
+  padding: 8px 24px;
   border-radius: 30px;
   font-weight: bold;
   text-decoration: none;
   transition: background 0.3s;
   border: none;
   cursor: pointer;
+  margin-top: -220px;
 }
 
 .home-next-container .next-button:hover,
@@ -293,8 +298,8 @@
   color: #fff;
   border: none;
   border-radius: 6px;
-  padding: 12px 24px;
-  font-size: 1rem;
+  padding: 10px 4px;
+  font-size: 0.9rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -308,172 +313,3 @@
   cursor: not-allowed;
 }
 
-/* Header Container */
-.header-container {
-  background: var(--brand-header);
-  color: #000; /* changed from #fff to black */
-  padding: 20px;
-  text-align: center;
-  position: relative;
-}
-
-/* Logo and Title */
-.logo-title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-
-.logo {
-  width: 60px;
-  height: auto;
-}
-
-.logo-title h3 {
-  font-size: 1.2rem;
-  margin: 0;
-  color: #000; /* changed from #fff to black */
-}
-
-/* Navigation Bar */
-.main-nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
-  padding: 0;
-  margin: 20px 0 0;
-  list-style: none;
-}
-
-.main-nav ul li a {
-  color: #1d3557; /* dark blue */
-  text-decoration: none;
-  font-weight: bold;
-  padding: 8px 12px;
-  border-radius: 20px;
-  transition: background 0.3s;
-}
-
-.main-nav ul li a:hover {
-  background: var(--brand-hover);
-  color: var(--text-main);
-}
-
-/* Mobile Menu Toggle */
-.menu-toggle {
-  display: block;
-  background: none;
-  border: none;
-  font-size: 1.8rem;
-  color: #1d3557; /* dark blue */
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  cursor: pointer;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .main-nav ul {
-    flex-direction: column;
-    gap: 10px;
-    display: none;
-    margin-top: 15px;
-  }
-
-  .main-nav ul.show {
-    display: flex;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
-  .logo-title {
-    flex-direction: column;
-    text-align: center;
-  }
-}
-
-
-
-
-/* Header styling */
-header {
-  background-color: var(--brand-header);
-  padding: 10px 0;
-  color: var(--text-main);
-}
-
-
-
-
-
-.logo-title img.logo {
-  height: 50px;
-  width: auto;
-  
-}
-
-
-
-/* Navigation */
-.main-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 15px;
-  margin: 0;
-  padding: 0;
-}
-
-.main-nav a {
-  text-decoration: none;
-  color: var(--text-main);
-  font-weight: bold;
-  transition: color 0.3s;
-}
-
-.main-nav a:hover {
-  color: var(--brand-accent);
-}
-
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-  .header-container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-
-  .menu-toggle {
-    align-self: flex-end;
-    margin-top: 10px;
-  }
-}
-
-/* Tap feedback for nav links */
-.main-nav a:active,
-.main-nav a:focus {
-  outline: none;
-  background-color: pink; /* or use a custom shade like #f48fb1 */
-  color: #fff;
-  border-radius: 6px;
-}
-
-@media (min-width: 769px) {
-  .main-nav ul {
-    display: flex !important;
-    flex-direction: row !important;
-    gap: 15px;
-    margin-top: 0;
-  }
-}
-
-@media (min-width: 769px) {
-  header .menu-toggle {
-    display: none !important;
-  }
-}

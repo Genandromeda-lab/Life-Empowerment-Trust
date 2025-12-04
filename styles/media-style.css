@@ -133,11 +133,11 @@
   display: block;
   background: none;
   border: none;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   color: #1d3557; /* dark blue */
   position: absolute;
   top: 20px;
-  right: 20px;
+  right: 8px;
   cursor: pointer;
 }
 

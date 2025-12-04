@@ -61,7 +61,7 @@ form button {
 /* Trust Details Card */
 .trust-details p {
   text-align: center;
-  line-height: 1.6;
+  line-height: 2.6;
   color: var(--text-secondary);
 }
 
@@ -87,7 +87,7 @@ form button {
 .nav-buttons {
   display: flex;
   justify-content: flex-start; /* back button aligned left */
-  margin: 40px auto;
+  margin: -69px auto;
 }
 
 .back-button {
@@ -263,11 +263,11 @@ footer {
   display: block;
   background: none;
   border: none;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   color: #1d3557; /* dark blue */
   position: absolute;
   top: 20px;
-  right: 20px;
+  right: 8px;
   cursor: pointer;
 }
 
