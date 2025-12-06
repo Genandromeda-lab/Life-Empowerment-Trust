@@ -478,18 +478,18 @@ header {
   height: 35px;
   width: auto;
   margin-left: -55px;
-  margin-top: -7px;
+  margin-top: -2px;
 }
 
 
 .logo-title h3 {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: bold;
   color:black;
   margin: 0;
 }
 .logo-title p {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-weight: bold;
   font-family: monospace;
   color: var(--brand-accent);
