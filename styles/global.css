@@ -464,6 +464,7 @@ header {
   align-items: center;
   gap: 10px;
   margin-bottom: 2px;
+  margin-left: 10px;
 }
 
 .logo {
@@ -474,7 +475,7 @@ header {
 }
 
 .logo-title img.logo {
-  height: 50px;
+  height: 43px;
   width: auto;
   margin-left: -55px;
   margin-top: -7px;
