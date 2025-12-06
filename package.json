@@ -10,7 +10,7 @@
   }
   ,
   "scripts": {
-    "start": "echo 'Open index.html in your browser or deploy via GitHub Pages/Netlify'"
+    "start": "echo 'Open index.html in your browser or deploy via GitHub Pages'"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,6 @@
   "bugs": {
     "url": "https://github.com/Genandromeda-lab/Life-Empowerment-Trust/issues"
   },
-  "homepage": "https://github.com/Genandromeda-lab/Life-Empowerment-Trust#readme"
+  "homepage": "https://www.lifeempowermenttrust.org"
  
 }
