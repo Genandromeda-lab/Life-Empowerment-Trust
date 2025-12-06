@@ -57,7 +57,7 @@ serve(async (req: Request) => {
 
     // ✅ Internal notification email
     await resend.emails.send({
-      from: "onboarding@resend.dev",
+      from: "lifeempowermenttrust.org",
       to: "lifeempowermenttrust@gmail.com",
       subject: "New Donation Received",
       html: `

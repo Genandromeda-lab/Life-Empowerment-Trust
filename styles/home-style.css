@@ -222,7 +222,8 @@
   justify-content: center;
   gap: 15px;          /* slightly smaller gap */
   margin: -70px auto;  /* reduced spacing */
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+  flex-flow: row;
 }
 
 .quick-button {

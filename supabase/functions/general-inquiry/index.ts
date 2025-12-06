@@ -33,7 +33,7 @@ serve(async (req: Request) => {
 
     // Customer confirmation email
     await resend.emails.send({
-      from: "onboarding@resend.dev",
+      from:"lifeempowermenttrust.org",
       to: email,
       subject: "Inquiry Received",
       html: `

@@ -49,7 +49,7 @@ serve(async (req: Request) => {
 
     // Internal notification email to trust inbox
     await resend.emails.send({
-      from: "onboarding@resend.dev",
+      from: "lifeempowermenttrust.org",
       to: "lifeempowermenttrust@gmail.com",
       subject: "New Book Order Received",
       html: `

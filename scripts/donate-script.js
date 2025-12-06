@@ -138,3 +138,47 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+const { Resend } = require('resend');
+const resend = new Resend(process.env.RESEND_API_KEY);
+
+exports.handler = async function (event, context) {
+  if (event.httpMethod !== 'POST') {
+    return {
+      statusCode: 405,
+      body: 'Method Not Allowed',
+    };
+  }
+
+  const { name, email, message } = JSON.parse(event.body);
+
+  try {
+    // 1️⃣ Notification email to you
+    await resend.emails.send({
+      from: 'Life Empowerment Trust <noreply@lifeempowermenttrust.org>',
+      to: 'lifeempowermenttrust@gmail.com',
+      subject: 'New Form Submission',
+      html: `<p><strong>${name}</strong> (${email}) says:</p><p>${message}</p>`,
+    });
+
+    // 2️⃣ Thank-you email to donor/visitor
+    await resend.emails.send({
+      from: 'Life Empowerment Trust <noreply@lifeempowermenttrust.org>',
+      to: email,
+      subject: 'Thank You from Life Empowerment Trust',
+      html: `<p>Dear ${name},</p>
+             <p>Thank you for reaching out / donating. Your support means a lot to us!</p>
+             <p>Warm regards,<br>Life Empowerment Trust Team</p>`,
+    });
+
+    return {
+      statusCode: 200,
+      body: JSON.stringify({ success: true }),
+    };
+  } catch (error) {
+    return {
+      statusCode: 500,
+      body: JSON.stringify({ success: false, error: error.message }),
+    };
+  }
+};
