@@ -464,7 +464,7 @@ header {
   align-items: center;
   gap: 10px;
   margin-bottom: 2px;
-  margin-left: 10px;
+  margin-left: 23px;
 }
 
 .logo {
@@ -475,7 +475,7 @@ header {
 }
 
 .logo-title img.logo {
-  height: 43px;
+  height: 35px;
   width: auto;
   margin-left: -55px;
   margin-top: -7px;
@@ -483,13 +483,13 @@ header {
 
 
 .logo-title h3 {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: bold;
   color:black;
   margin: 0;
 }
 .logo-title p {
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   font-weight: bold;
   font-family: monospace;
   color: var(--brand-accent);
