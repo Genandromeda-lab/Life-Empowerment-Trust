@@ -463,8 +463,8 @@ header {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-bottom: -30px;
-  margin-left: 110px;
+  margin-bottom: -54px;
+  margin-left: 143px;
 }
 
 .logo {
@@ -506,8 +506,9 @@ header {
   list-style: none;
   display: flex;
   gap: 20px;
-  margin: 50px;
+  margin: 82px;
   padding: 0;
+  margin-bottom: 10px;
 }
 
 .main-nav li {
